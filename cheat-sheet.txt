@@ -1,0 +1,24 @@
+react-bootstrap + bootswatch: nice for easy and pretty styling
+cdnjs to grab the link tag of font-awesome and put it on index.html: great icons
+react-router-bootstrap
+
+Simply npm i react-bootstrap and download the .min.css theme file from bootswatch
+
+When using a frontend and backend we gonna get a CORS error, because both our frontend and
+backend are in different domains (ports) and our backend is blocking the frontend API calls
+
+we can add a proxy attribute in our package.json and define there our backend root URL, this
+way we dont need to repeat it in every frontend API call
+
+drawsql.app -> useful for ER Diagrams for DBs
+
+MEDIA_ROOT is for user uploaded stuff
+
+django rest framework simpleJWT -> good library for implementing authentication using JWT; it
+doesnt store the tokens in the DB
+
+when using Postman, if we are using Tokens, we need to put Authorization: Bearer "accessToken"
+in the Header
+
+Django Signals are the equivalent to SQL Triggers; we should always register our aps the
+following way -> appName.apps.BaseConfig otherwise signals wont work and register them in apps 

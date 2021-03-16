@@ -1,6 +1,10 @@
 react-bootstrap + bootswatch: nice for easy and pretty styling
 cdnjs to grab the link tag of font-awesome and put it on index.html: great icons
 react-router-bootstrap
+npm i react-paypal-button-v2 -> paypal button integration
+
+
+Theory:
 
 Simply npm i react-bootstrap and download the .min.css theme file from bootswatch
 
@@ -21,4 +25,11 @@ when using Postman, if we are using Tokens, we need to put Authorization: Bearer
 in the Header
 
 Django Signals are the equivalent to SQL Triggers; we should always register our aps the
-following way -> appName.apps.BaseConfig otherwise signals wont work and register them in apps 
+following way -> appName.apps.BaseConfig otherwise signals wont work and register them in apps
+
+In the serializers to acces the Models attributes (columns) must be all lower case 
+
+To integrate a PayPal payment method we need to go to developers.paypal, create sandbox accounts
+and the rest check the code at OrderScreen.js
+
+request.query_params.get('key') grabs any query params passed in the URL (?key=value)
